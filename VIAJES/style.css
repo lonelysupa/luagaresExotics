@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui;
+}
+
+header{
+    background: rgb(0, 0, 0);
+    width: 100%;
+    display: table;
+}
+
+.menu{
+    width: 100%;
+
+}
+
+nav{
+    float: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 200px;
+    margin-top: 20px;
+    padding: 30px;
+    float: left;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+nav ul li a.activa,
+nav ul li a:hover {
+    font-size: 150%;
+}
+
+hr {
+    width: 80%; 
+    margin: 0 auto; 
+}
+
+.contenido{
+    height: 100%;
+    align-items: center;
+    justify-content: center; 
+}
+
+.informacion{
+    margin: 15%;
+    float: left;
+    text-align: left;
+}
+
+.informacion h2 {
+    color: rgb(37, 148, 148);
+    font-weight: bold;
+    font-size: 40px; 
+}
+
+.informacion p {
+    color: black;
+    margin-top: 10px; 
+    font-size: 16px; 
+    font-weight: bold;
+}
+
+.informacion h3{
+    margin-top: 20px; 
+    color: rgb(37, 148, 148);
+    font-weight: bold;
+    font-size: 24px; 
+}
+
+.formulario{
+    float: right;
+    margin-right: 15%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.formulario input {
+    border: 1px solid #ccc; 
+    padding: 8px; 
+    width: 100%; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: rgb(37, 148, 148);
+    border: none;
+    border-radius: 20px;
+}
