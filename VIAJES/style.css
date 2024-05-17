@@ -4,8 +4,25 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: system-ui;
+    position: relative;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('E:/Programacion WEB/VIAJES/VIAJES/img/fondoVacacion2.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
 }
 
 header{
@@ -48,7 +65,6 @@ hr {
 }
 
 .contenido{
-    height: 100%;
     align-items: center;
     justify-content: center; 
 }
@@ -60,9 +76,10 @@ hr {
 }
 
 .informacion h2 {
-    color: rgb(37, 148, 148);
+    color: rgb(0, 0, 0);
     font-weight: bold;
     font-size: 40px; 
+    margin-bottom: 50px;
 }
 
 .informacion p {
@@ -72,17 +89,22 @@ hr {
     font-weight: bold;
 }
 
+.forCont{
+    color: #ccc;
+
+}
+
 .informacion h3{
     margin-top: 20px; 
-    color: rgb(37, 148, 148);
+    color: rgb(0, 0, 0);
     font-weight: bold;
-    font-size: 24px; 
+    font-size: 20px; 
 }
 
 .formulario{
     float: right;
     margin-right: 15%;
-    margin-top: 5%;
+    margin-top: 13%;
     text-align: center;
 }
 
@@ -91,7 +113,7 @@ hr {
     padding: 8px; 
     width: 100%; 
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 button{
@@ -101,4 +123,97 @@ button{
     background-color: rgb(37, 148, 148);
     border: none;
     border-radius: 20px;
+}
+
+.formulario button{
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: rgb(2, 2, 2);
+    border: none;
+    border-radius: 20px;
+}
+
+.titulo1 h1 {
+    margin-top: 10%;
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.titulo1 .btn {
+    margin-left: 45%;
+    padding: 10px 20px;
+    background-color: rgb(37, 148, 148);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    
+}
+
+.titulo1 .btn:hover {
+    background-color: rgb(30, 120, 120);
+}
+
+.contenidoInicio{
+    align-items: center;
+}
+
+.login-container {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin-top: 10%;
+    margin-left: 38%;
+}
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.botonLogIn {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font: 1em sans-serif;
+    color: #333;
+}
+
+button:hover {
+    background-color: #45a049;
 }
